@@ -3,7 +3,7 @@ import "./widgetlg.css";
 export default function WigdetLg() {
 
   const Button = ({type}) => {
-    return <button>{type}</button>
+    return <button className={"largeWigdetButton " + type}>{type}</button>
   }
 
   return (
@@ -23,6 +23,53 @@ export default function WigdetLg() {
              </td>
              <td className="largeWigdetDate">2 Jul 2021</td>
              <td className="largeWigdetAmount">$122.00</td>
+             <td className="largeWigdetStatus">
+               <Button type="approved"/>
+             </td>
+          </tr>
+          <tr className="largeWigdetTh">
+             <td className="largeWigdetUser">
+             <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="" className="largeWigdetImage" />
+             <span className="largeWigdetName">Dip Dip Dipo</span>
+             </td>
+             <td className="largeWigdetDate">2 Jul 2021</td>
+             <td className="largeWigdetAmount">$122.00</td>
+             <td className="largeWigdetStatus">
+               <Button type="approved"/>
+             </td>
+          </tr>
+          <tr className="largeWigdetTh">
+             <td className="largeWigdetUser">
+             <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="" className="largeWigdetImage" />
+             <span className="largeWigdetName">Dip Dip Dipo</span>
+             </td>
+             <td className="largeWigdetDate">2 Jul 2021</td>
+             <td className="largeWigdetAmount">$122.00</td>
+             <td className="largeWigdetStatus">
+               <Button type="declined"/>
+             </td>
+          </tr>
+          <tr className="largeWigdetTh">
+             <td className="largeWigdetUser">
+             <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="" className="largeWigdetImage" />
+             <span className="largeWigdetName">Dip Dip Dipo</span>
+             </td>
+             <td className="largeWigdetDate">2 Jul 2021</td>
+             <td className="largeWigdetAmount">$122.00</td>
+             <td className="largeWigdetStatus">
+               <Button type="approved"/>
+             </td>
+          </tr>
+          <tr className="largeWigdetTh">
+             <td className="largeWigdetUser">
+             <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="" className="largeWigdetImage" />
+             <span className="largeWigdetName">Dip Dip Dipo</span>
+             </td>
+             <td className="largeWigdetDate">2 Jul 2021</td>
+             <td className="largeWigdetAmount">$122.00</td>
+             <td className="largeWigdetStatus">
+               <Button type="pending"/>
+             </td>
           </tr>
       </table>
     </div>
