@@ -1,4 +1,4 @@
-import { VisibilityOff } from "@material-ui/icons";
+import { Visibility } from "@material-ui/icons";
 import "./widgetsm.css";
 
 export default function WigdetSm() {
@@ -15,7 +15,7 @@ export default function WigdetSm() {
           <span className="smallWigdetUserTitle">Hustling</span>
         </div>
         <button className="smallWigdetButton">
-          <VisibilityOff />
+          <Visibility className="smallWigdetIcon"/>
           Display
         </button>
         </li>
@@ -26,7 +26,7 @@ export default function WigdetSm() {
           <span className="smallWigdetUserTitle">Hustling</span>
         </div>
         <button className="smallWigdetButton">
-          <VisibilityOff />
+          <Visibility className="smallWigdetIcon"/>
           Display
         </button>
         </li>
@@ -37,7 +37,7 @@ export default function WigdetSm() {
           <span className="smallWigdetUserTitle">Hustling</span>
         </div>
         <button className="smallWigdetButton">
-          <VisibilityOff />
+          <Visibility className="smallWigdetIcon"/>
           Display
         </button>
         </li>
@@ -48,7 +48,7 @@ export default function WigdetSm() {
           <span className="smallWigdetUserTitle">Hustling</span>
         </div>
         <button className="smallWigdetButton">
-          <VisibilityOff />
+          <Visibility className="smallWigdetIcon"/>
           Display
         </button>
         </li>
@@ -59,7 +59,7 @@ export default function WigdetSm() {
           <span className="smallWigdetUserTitle">Hustling</span>
         </div>
         <button className="smallWigdetButton">
-          <VisibilityOff />
+          <Visibility className="smallWigdetIcon"/>
           Display
         </button>
         </li>
@@ -70,7 +70,7 @@ export default function WigdetSm() {
           <span className="smallWigdetUserTitle">Hustling</span>
         </div>
         <button className="smallWigdetButton">
-          <VisibilityOff />
+          <Visibility className="smallWigdetIcon"/>
           Display
         </button>
         </li>
