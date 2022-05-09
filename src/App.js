@@ -2,19 +2,19 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import Home from "./pages/Home/Home";
 import "./App.css";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import UserList from "./pages/UserList/UserList";
 
 function App() {
   return (
     <div>
       <Topbar />
       <div className="container">
-      <Sidebar/>
-       <Home/>
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList />} />
+        </Routes>
       </div>
     </div>
   );
