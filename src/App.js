@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
         </Routes>
       </div>
