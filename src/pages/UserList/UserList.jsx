@@ -2,18 +2,24 @@ import "./userList.css";
 import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
-  { field: "id", headerName: "ID", width: 70 },
-  { field: "username", headerName: "Username", width: 130 },
-  { field: "avatar", headerName: "Avatar", width: 130 },
+  { field: "id", headerName: "ID", width: 90 },
+  { field: "user", headerName: "User", width: 200, renderCell: (params)=>{
+    return (
+      <div className="userandimg">
+        <img src={params.row.avatar} className="userlistimg" alt=""/>
+        {params.row.user}
+      </div>
+    )
+  } },
   { field: "email", headerName: "Email", width: 130 },
-  { field: "status", headerName: "Status", width: 90 },
-  { field: "transaction", headerName: "Transaction", width: 90 },
+  { field: "status", headerName: "Status", width: 120 },
+  { field: "transaction", headerName: "Transaction", width: 160 }
 ];
 
 const rows = [
   {
     id: 1,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -22,7 +28,7 @@ const rows = [
   },
   {
     id: 2,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -31,7 +37,7 @@ const rows = [
   },
   {
     id: 3,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -40,7 +46,7 @@ const rows = [
   },
   {
     id: 4,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -49,7 +55,7 @@ const rows = [
   },
   {
     id: 5,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -58,7 +64,7 @@ const rows = [
   },
   {
     id: 6,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -67,7 +73,7 @@ const rows = [
   },
   {
     id: 7,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -76,7 +82,7 @@ const rows = [
   },
   {
     id: 8,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
@@ -85,7 +91,7 @@ const rows = [
   },
   {
     id: 9,
-    username: "Jon Snow",
+    user: "Jon Snow",
     avatar:
       "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
     email: "Jon@gmail.com",
