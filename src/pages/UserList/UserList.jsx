@@ -1,8 +1,12 @@
 import "./userList.css";
 import { DataGrid } from "@mui/x-data-grid";
+import { DeleteOutline } from "@material-ui/icons";
+import {userRows} from "../../data"; 
+import { Link } from "react-router-dom";
+
 
 const columns = [
-  { field: "id", headerName: "ID", width: 90 },
+  { field: "id", headerName: "ID", width: 150 },
   { field: "user", headerName: "User", width: 200, renderCell: (params)=>{
     return (
       <div className="userandimg">
@@ -11,104 +15,33 @@ const columns = [
       </div>
     )
   } },
-  { field: "email", headerName: "Email", width: 130 },
-  { field: "status", headerName: "Status", width: 120 },
-  { field: "transaction", headerName: "Transaction", width: 160 }
+  { field: "email", headerName: "Email", width: 200 },
+  { field: "status", headerName: "Status", width: 150 },
+  { field: "transaction", headerName: "Transaction", width: 200 },
+  { field: "actions", headerName: "Actions", width: 200, renderCell: (params)=>{
+    return (
+      <>
+      <Link to={"/user/"+params.row.id}>
+       <button className="userlistbuttonedit">Edit</button>
+      </Link>
+       <DeleteOutline className="userlistbuttondelete"/>
+      </>
+    )
+  } },
 ];
 
-const rows = [
-  {
-    id: 1,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 2,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 3,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 4,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 5,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 6,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 7,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 8,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-  {
-    id: 9,
-    user: "Jon Snow",
-    avatar:
-      "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
-    email: "Jon@gmail.com",
-    status: "active",
-    transaction: "$120.00",
-  },
-];
+
 
 export default function UserList() {
   return (
     <div className="userList">
       <DataGrid
-        rows={rows}
+        rows={userRows}
         columns={columns}
-        pageSize={5}
+        pageSize={8}
         rowsPerPageOptions={[5]}
         checkboxSelection
+        disableSelectionOnClick
       />
     </div>
   );

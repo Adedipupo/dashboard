@@ -48,3 +48,86 @@ export const userData = [
       "Active User": 6490,
     },
   ];
+export const userRows = [
+    {
+      id: 1,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 2,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 3,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 4,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 5,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 6,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 7,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 8,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 9,
+      user: "Jon Snow",
+      avatar:
+        "https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png",
+      email: "Jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+  ];
