@@ -6,6 +6,9 @@ import { Routes, Route } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
 import CreateUser from "./pages/createUser/CreateUser";
+import ProductList from "./pages/productList/ProductList";
+import Product from "./pages/product/Product";
+import CreateProduct from "./pages/createProduct/CreateProduct";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/users" element={<UserList />} />
           <Route path="/user/:userId" element={<User />} />
           <Route path="/newUser" element={<CreateUser />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/createProduct" element={<CreateProduct />} />
         </Routes>
       </div>
     </div>

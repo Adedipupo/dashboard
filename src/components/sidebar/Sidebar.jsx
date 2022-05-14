@@ -1,19 +1,26 @@
 import { ModalManager } from "@material-ui/core";
 import { BrokenImageTwoTone, Chat, CropOriginalOutlined, Feedback, GraphicEq, LineStyle, Mail, Money, MoneyOutlined, PeopleOutlineTwoTone, PeopleTwoTone, ReportOff, ReportTwoTone, Timeline, TrendingUp } from "@material-ui/icons";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./sidebar.css";
 
 export default function Sidebar() {
+  const [sidebar,setSidebar] = useState(false);
+  const showSidebar = () =>{
+    console.log("first");
+    setSidebar(!sidebar);
+  } 
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
           <div className="sidebarMenu">
               <h3 className="sidebarTitle">Dashboard</h3>
               <ul className="sidebarList">
-                  <li className="sidebarListItem active">
+                  <li className="sidebarListItem" onClick={showSidebar}>
                     <LineStyle className="sidebarIcon" />
                     Home
                   </li>
-                  <li className="sidebarListItem">
+                  <li className="sidebarListItem" onClick={showSidebar}>
                     <Timeline className="sidebarIcon"/>
                     Analytics
                   </li>
@@ -26,14 +33,18 @@ export default function Sidebar() {
           <div className="sideMenu">
               <h3 className="sidebarTitle">Quick Menu</h3>
               <ul className="sidebarList">
+                <Link to="/users" className="link">
                   <li className="sidebarListItem">
                     <PeopleOutlineTwoTone className="sidebarIcon"/>
                     Users
                   </li>
+                </Link>
+                <Link to="/products" className="link">
                   <li className="sidebarListItem">
                     <BrokenImageTwoTone className="sidebarIcon"/>
                     Products
                   </li>
+                </Link>
                   <li className="sidebarListItem">
                     <MoneyOutlined className="sidebarIcon"/>
                     Transactions
