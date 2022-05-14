@@ -1,3 +1,25 @@
+export const productData = [
+    {
+      name: "Jan",
+      "Sales": 4000,
+    },
+    {
+      name: "Feb",
+      "Sales": 3000,
+    },
+    {
+      name: "Mar",
+      "Sales": 2000,
+    },
+    {
+      name: "April",
+      "Sales": 2780,
+    },
+    {
+      name: "May",
+      "Sales": 1890,
+    }
+  ];
 export const userData = [
     {
       name: "Jan",
@@ -47,7 +69,7 @@ export const userData = [
       name: "Dec",
       "Active User": 6490,
     },
-  ];
+  ]; 
 export const userRows = [
     {
       id: 1,
