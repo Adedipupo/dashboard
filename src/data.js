@@ -131,3 +131,86 @@ export const userRows = [
       transaction: "$120.00",
     },
   ];
+export const productRows = [
+    {
+      id: 1,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 2,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 3,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 4,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 5,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 6,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 7,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 8,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 9,
+      name: "Apple watch",
+      img:
+        "https://images.macrumors.com/article-new/2014/09/apple-watch-series-7.jpg",
+      stock: 1234,
+      status: "active",
+      price: "$120.00",
+    },
+  ];
