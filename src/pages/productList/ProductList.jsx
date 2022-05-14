@@ -12,24 +12,24 @@ export default function ProductList() {
       }
       const columns = [
         { field: "id", headerName: "ID", width: 150 },
-        { field: "name", headerName: "Name", width: 200, renderCell: (params)=>{
+        { field: "name", headerName: "Product", width: 200, renderCell: (params)=>{
           return (
-            <div className="userandimg">
-              <img src={params.row.img} className="userlistimg" alt=""/>
+            <div className="productItem">
+              <img src={params.row.img} className="productlistimg" alt=""/>
               {params.row.name}
             </div>
           )
         } },
-        { field: "stock", headerName: "Email", width: 200 },
+        { field: "stock", headerName: "Stock", width: 200 },
         { field: "status", headerName: "Status", width: 150 },
-        { field: "price", headerName: "Transaction", width: 200 },
+        { field: "price", headerName: "Price", width: 200 },
         { field: "actions", headerName: "Actions", width: 200, renderCell: (params)=>{
           return (
             <>
-            <Link to={"/user/"+params.row.id}>
-             <button className="userlistbuttonedit">Edit</button>
+            <Link to={"/product/"+params.row.id}>
+             <button className="productlistbuttonedit">Edit</button>
             </Link>
-             <DeleteOutline className="userlistbuttondelete" onClick={()=>handleDelete(params.row.id)}/>
+             <DeleteOutline className="productlistbuttondelete" onClick={()=>handleDelete(params.row.id)}/>
             </>
           )
         } },
